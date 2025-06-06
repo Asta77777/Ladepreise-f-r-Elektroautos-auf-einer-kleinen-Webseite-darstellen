@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ladepreise für Elektroautos</title>
+
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <h1>Ladepreise für Elektroautos</h1>
+
+  <!-- ✅ Display for last update timestamp -->
+  <p id="last-updated" style="font-style: italic; margin-bottom: 1em;"></p>
+  <!-- 🔍 Filter input -->
+<input 
+  type="text" 
+  id="filter-input" 
+  placeholder="🔍 Filter by city, status, plug type..." 
+  style="margin-bottom: 1em; padding: 0.5em; width: 100%; max-width: 400px; border-radius: 6px; border: 1px solid #ccc;"
+>
+
+
+  <!-- ✅ Table to display charging stations -->
+  <table id="station-table" class="station-table">
+    <thead>
+      <tr>
+        <th><i class="fas fa-charging-station"></i> Name</th>
+        <th><i class="fas fa-map-marker-alt"></i> Location</th>
+        <th><i class="fas fa-euro-sign"></i> Price</th>
+        <th><i class="fas fa-bolt"></i> Speed</th>
+        <th><i class="fas fa-plug"></i> Plug</th>
+        <th><i class="fas fa-unlock"></i> Access</th>
+        <th><i class="fas fa-circle"></i> Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Rows are dynamically generated via JavaScript -->
+    </tbody>
+  </table>
+
+  <!-- Script JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

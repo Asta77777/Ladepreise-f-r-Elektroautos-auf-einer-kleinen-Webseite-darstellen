@@ -1,0 +1,88 @@
+/* Global styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 2rem;
+  background-color: #f2f4f8;
+  color: #2c2c2c;
+}
+
+h1 {
+  text-align: center;
+  color: #222;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+/* === Table Layout === */
+.station-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Table Headings */
+.station-table th {
+  background-color: #0066cc;
+  color: #fff;
+  text-align: left;
+  padding: 1rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* Table Body */
+.station-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 0.9rem;
+}
+
+/* Alternate row color */
+.station-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Icons inside headings */
+.station-table th i {
+  margin-right: 0.4rem;
+}
+
+/* Last update text */
+#last-updated {
+  text-align: center;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* === Status Badge Styles === */
+.badge {
+  display: inline-block;
+  padding: 0.25em 0.6em;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.badge--green {
+  background-color: #28a745;
+}
+
+.badge--blue {
+  background-color: #007bff;
+}
+
+.badge--red {
+  background-color: #dc3545;
+}
+
+.badge--gray {
+  background-color: #6c757d;
+}
+
+
